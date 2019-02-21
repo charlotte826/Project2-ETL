@@ -11,4 +11,6 @@ Since the JSON file stores column names in a separate location from their corres
 Extract data from the JSON file by running 'for loops' to iterate through the data, filtering by desired column names, which takes only the data of interest and stores it in a list of lists called "data", whereby each interior list represents one row. The values of the JSON file need to be converted from objects into floats for merging. Convert "data" into a Pandas dataframe, which allows for transformation of a list of lists. Perform an inner merge on the two dataframes on their shared column "zip_code" into one combined dataframe. 
 
 ### Load
-Export the dataframe to an SQLite Database. Additionally, exporting the dataframe into a CSV file could prove useful if the data needs to be re-imported in the future for further analysis.
+Export the dataframe to an SQLite Database. This database includes information on gender, ethnicity, citizenship, public assistance in combination with graffiti incidences, dates, status and resolutions.
+
+Additionally, exporting the dataframe into a CSV file could prove useful if the data needs to be re-imported in the future for further analysis.
