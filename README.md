@@ -6,7 +6,7 @@ The goal is to create a database that would allow analysis of NYC graffiti data 
 ### Transform
 After importing the CSV file, transform into a Pandas dataframe. Rename the column on which dataframes will be merged to a uniform name for easier merging. 
 
-Since the JSON file stores column names in a separate location from their corresponding data, the first step is to extract the column names. Upon locating the column names path, use the path and the ijson package to extract the column names into a list. From this list, select desired the names filter out the rest. 
+Since the JSON file stores column names in a separate location from their corresponding data, the first step is to extract the column names. Upon locating the column names path, use the path and the iJSON package to extract the column names into a list. From this list, select desired the names filter out the rest. 
 
 Extract data from the JSON file by running 'for loops' to iterate through the data, filtering by desired column names, which takes only the data of interest and stores it in a list of lists called "data", whereby each interior list represents one row. The values of the JSON file need to be converted from objects into floats for merging. Convert "data" into a Pandas dataframe, which allows for transformation of a list of lists. Perform an inner merge on the two dataframes on their shared column "zip_code" into one combined dataframe. 
 
